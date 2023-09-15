@@ -2,6 +2,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -13,8 +14,8 @@ import static org.junit.Assert.assertNotNull;
 public class CreateOrdersTest {
     private static final String CREATE_ORDER = "/api/v1/orders";
     private static final String SCOOTER_URI = "https://qa-scooter.praktikum-services.ru/";
-
     private RequestSpecification requestSpecification;
+    private ScooterServiceOrder client = new ScooterServiceOrder();
     public void setRequestSpecification(RequestSpecification requestSpecification) {
         this.requestSpecification = requestSpecification;
     }
@@ -55,49 +56,30 @@ public class CreateOrdersTest {
         };
     }
 
-    @Test
-    public void createOrderCode201_test () {
 
+    @Before
+    public void client() {
         requestSpecification =
                 new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
                         .setContentType(ContentType.JSON)
                         .build();
-        setRequestSpecification(requestSpecification);
+        client.setRequestSpecification(requestSpecification);
+    }
+
+    @Test
+    public void createOrderCode201Test () {
         Order order = new Order(firstName,lastName,address, metroStation,
                 phone, rentTime, deliveryDate,comment,color);
-
-        ValidatableResponse response =
-                given()
-                        .spec(requestSpecification)
-                        .header("Content-type", "application/json")
-                        .body(order)
-                        .post(CREATE_ORDER)
-                        .then()
-                        .log()
-                        .all();
+        ValidatableResponse response = client.createOrder(order);
         response.assertThat().statusCode(201);
     }
 
     @Test
-    public void createOrderContainsTrack_test () {
+    public void createOrderContainsTrackTest () {
 
-        requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        setRequestSpecification(requestSpecification);
         Order order = new Order(firstName,lastName,address, metroStation,
                 phone, rentTime, deliveryDate,comment,color);
-
-        ValidatableResponse response =
-                given()
-                        .spec(requestSpecification)
-                        .header("Content-type", "application/json")
-                        .body(order)
-                        .post(CREATE_ORDER)
-                        .then()
-                        .log()
-                        .all();
+        ValidatableResponse response = client.createOrder(order);
         assertNotNull(response.extract().body().jsonPath().get("track"));
     }
 }

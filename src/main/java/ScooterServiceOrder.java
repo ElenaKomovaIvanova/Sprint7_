@@ -12,8 +12,8 @@ public class ScooterServiceOrder {
     public void setRequestSpecification(RequestSpecification requestSpecification) {
         this.requestSpecification = requestSpecification;
     }
-    public void createOrder(Order order) {
-        given()
+    public ValidatableResponse createOrder(Order order) {
+        return given()
                 .spec(requestSpecification)
                 .header("Content-type", "application/json")
                 .body(order)

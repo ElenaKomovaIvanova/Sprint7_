@@ -28,14 +28,14 @@ public class CreateCourierTest {
 
 
     @Test
-    public void createCourier_expOk_test() {
+    public void createCourierExpOkTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
         response.assertThat().body("ok", CoreMatchers.is(true));
     }
 
     @Test
-    public void createCourier_exp201_test() {
+    public void createCourierExp201Test() {
 
         ValidatableResponse response = client.createCourier(COURIER);
         response.assertThat().statusCode(201);
@@ -43,7 +43,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_duplicatesCod_test() {
+    public void createCourierDuplicatesCodTest() {
 
         ValidatableResponse response1 = client.createCourier(COURIER);
         ValidatableResponse response2 = client.createCourier(COURIER);
@@ -52,7 +52,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_duplicatesBody_test() {
+    public void createCourierDuplicatesBodyTest() {
 
         ValidatableResponse response1 = client.createCourier(COURIER);
         ValidatableResponse response2 = client.createCourier(COURIER);
@@ -62,7 +62,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_noLogin_test() {
+    public void createCourierNoLoginTest() {
 
         Courier courier = new Courier("first","Courier", 0);
         ValidatableResponse response = client.createCourier(courier);
@@ -70,7 +70,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_noPassword_test() {
+    public void createCourierNoPasswordTest() {
 
         Courier courier = Courier.noPassword("CourierOne","Courier", 0);
         ValidatableResponse response = client.createCourier(courier);
@@ -79,7 +79,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_noPassword_noLogin_test() {
+    public void createCourierNoPasswordNoLoginTest() {
 
         Courier courier = new Courier("Courier", 0);
         ValidatableResponse response = client.createCourier(courier);
@@ -88,7 +88,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_authorization_test() {
+    public void createCourierAuthorizationTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
         assertEquals(200,client.login(Credentials.fromCourier(COURIER)).extract().statusCode());
@@ -96,7 +96,7 @@ public class CreateCourierTest {
 
 
     @Test
-    public void createCourier_authorization_noLogin_test() {
+    public void createCourierAuthorizationNoLoginTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
         Courier courier = new Courier("first","Courier", 0);
@@ -104,7 +104,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_authorization_noLoginMessage_test() {
+    public void createCourierAuthorizationNoLoginMessageTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
         Courier courier = new Courier("first","Courier", 0);
@@ -113,7 +113,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_authorization_noPassword_test() {
+    public void createCourierAuthorizationNoPasswordTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
         Courier courier = Courier.noPassword("CourierOne","Courier", 0);
@@ -121,7 +121,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_authorization_noPasswordMessage_test() {
+    public void createCourierAuthorizationNoPasswordMessageTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
         Courier courier = Courier.noPassword("CourierOne","Courier", 0);
@@ -130,7 +130,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_authorization_loginError_test() {
+    public void createCourierAuthorizationLoginErrorTest() {
 
         Courier courier = new Courier("CourierOne+добавили_текст", "first","Courier", 0);
         ValidatableResponse response = client.createCourier(COURIER);
@@ -138,7 +138,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void createCourier_authorization_loginErrorMessage_test() {
+    public void createCourierAuthorizationLoginErrorMessageTest() {
 
         Courier courier = new Courier("CourierOne+добавили_текст", "first","Courier", 0);
         ValidatableResponse response = client.createCourier(COURIER);
@@ -147,7 +147,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    public void authorization_containsId_test() {
+    public void authorizationContainsIdTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
         assertNotNull(client.login(Credentials.fromCourier(COURIER)).
