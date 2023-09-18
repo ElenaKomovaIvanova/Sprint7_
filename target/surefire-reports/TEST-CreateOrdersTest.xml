@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CreateOrdersTest" time="0.928" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint7_\target\test-classes;D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint7_\target\classes;C:\Users\e.komova\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\e.komova\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\e.komova\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\e.komova\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\e.komova\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\e.komova\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\e.komova\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\e.komova\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\e.komova\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-junit4\2.24.0\allure-junit4-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\e.komova\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-rest-assured\2.24.0\allure-rest-assured-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-attachments\2.24.0\allure-attachments-2.24.0.jar;C:\Users\e.komova\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\e.komova\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin"/>
+    <property name="sun.java.command" value="C:\Users\e.komova\AppData\Local\Temp\surefire8268726650664554700\surefirebooter-20230918163901114_3.jar C:\Users\e.komova\AppData\Local\Temp\surefire8268726650664554700 2023-09-18T16-39-00_478-jvmRun1 surefire-20230918163901114_1tmp surefire_0-20230918163901114_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint7_\target\test-classes;D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint7_\target\classes;C:\Users\e.komova\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\e.komova\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\e.komova\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\e.komova\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\e.komova\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\e.komova\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\e.komova\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\e.komova\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\e.komova\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-junit4\2.24.0\allure-junit4-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\e.komova\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-rest-assured\2.24.0\allure-rest-assured-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-attachments\2.24.0\allure-attachments-2.24.0.jar;C:\Users\e.komova\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\e.komova\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="allure.results.directory" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint7_\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\e.komova"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint7_"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\e.komova\AppData\Local\Temp\surefire8268726650664554700\surefirebooter-20230918163901114_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.18+10-LTS"/>
+    <property name="user.name" value="e.komova"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.18.10.1"/>
+    <property name="localRepository" value="C:\Users\e.komova\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\EDE7D~1.KOM\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="user.dir" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint7_"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\e.komova\AppData\Local\Microsoft\WindowsApps;C:\Users\e.komova\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin;;C:\apache-maven-3.8.8\bin;C:\WebDriver;C:\Users\e.komova\allure-commandline-2.24.0\allure-2.24.0\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.18+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="createOrderCode201Test[Создание заказа.Параметры.Тестовые данные: Елена Иванова Москва 5 89222222222 4 10.09.2023 Комментарий  [Ljava.lang.String;@61a7930e]" classname="CreateOrdersTest" time="0.061">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 16
+Content-Type: application/json; charset=utf-8
+Date: Mon, 18 Sep 2023 13:39:22 GMT
+ETag: W/"10-OnrhTjJjkOe70rTZM+QbvDgmzU4"
+Set-Cookie: _yasc=6h83VopnDifctchsce2Po0DuXVnTHbWx3NUgIFSq2bkWvy75kim8cTpJyT7qMPG+rA==; domain=.praktikum-services.ru; path=/; expires=Thu, 15 Sep 2033 13:39:22 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1695044362324785-11096723129677496690
+
+{
+    "track": 343294
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderContainsTrackTest[Создание заказа.Параметры.Тестовые данные: Елена Иванова Москва 5 89222222222 4 10.09.2023 Комментарий  [Ljava.lang.String;@61a7930e]" classname="CreateOrdersTest" time="0.121">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 16
+Content-Type: application/json; charset=utf-8
+Date: Mon, 18 Sep 2023 13:39:22 GMT
+ETag: W/"10-ZPNtLmULgk/XXVjDDOLuIB39KOU"
+Set-Cookie: _yasc=Whez7vPCO1FWuoR9r+ULR4ryS+Ht+M8ZaAF19nvh8Yqq3d1L9HaTTmgzStfLDzyEfg==; domain=.praktikum-services.ru; path=/; expires=Thu, 15 Sep 2033 13:39:22 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1695044362416711-12971354140637444677
+
+{
+    "track": 454671
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderCode201Test[Создание заказа.Параметры.Тестовые данные: Елена Иванова Москва 5 89222222222 4 10.09.2023 Комментарий  [Ljava.lang.String;@d436e51]" classname="CreateOrdersTest" time="0.127">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 16
+Content-Type: application/json; charset=utf-8
+Date: Mon, 18 Sep 2023 13:39:22 GMT
+ETag: W/"10-f9Qd6/Ez5BCU+SvTAET5B1xuMrU"
+Set-Cookie: _yasc=3H2DhVCFDcT1TGgxVlu1onggM86zDV9oUN/ApaWDajhC/sUpzf3q2LNrdDhY3K0O; domain=.praktikum-services.ru; path=/; expires=Thu, 15 Sep 2033 13:39:22 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1695044362533892-10900881630366699878
+
+{
+    "track": 819992
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderContainsTrackTest[Создание заказа.Параметры.Тестовые данные: Елена Иванова Москва 5 89222222222 4 10.09.2023 Комментарий  [Ljava.lang.String;@d436e51]" classname="CreateOrdersTest" time="0.14">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 16
+Content-Type: application/json; charset=utf-8
+Date: Mon, 18 Sep 2023 13:39:22 GMT
+ETag: W/"10-HLau7adIvRvwBng+WcFrDj2FH9c"
+Set-Cookie: _yasc=S2ofbTLoLV+NgBmlzRYYl5aaaWwJWBlKBF89Xd2Fx/CLaLlAm/gi1eUdFeutD6fB9g==; domain=.praktikum-services.ru; path=/; expires=Thu, 15 Sep 2033 13:39:22 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1695044362660967-15462088898667788639
+
+{
+    "track": 221090
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderCode201Test[Создание заказа.Параметры.Тестовые данные: Елена Иванова Москва 5 89222222222 4 10.09.2023 Комментарий  [Ljava.lang.String;@35cc5b75]" classname="CreateOrdersTest" time="0.09">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 16
+Content-Type: application/json; charset=utf-8
+Date: Mon, 18 Sep 2023 13:39:22 GMT
+ETag: W/"10-8uHDXNUgsR/gMh/8kzF5UX2za6E"
+Set-Cookie: _yasc=lzBuo15T4q8nWpwmtyJQYOUClRyYcmxC2iUq5GFWmh2T9Ras2VTOANfgwc6AW6tG; domain=.praktikum-services.ru; path=/; expires=Thu, 15 Sep 2033 13:39:22 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1695044362786205-3183071240341813589
+
+{
+    "track": 733514
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderContainsTrackTest[Создание заказа.Параметры.Тестовые данные: Елена Иванова Москва 5 89222222222 4 10.09.2023 Комментарий  [Ljava.lang.String;@35cc5b75]" classname="CreateOrdersTest" time="0.16">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 16
+Content-Type: application/json; charset=utf-8
+Date: Mon, 18 Sep 2023 13:39:22 GMT
+ETag: W/"10-Hr85AZfR+VcKDrwOQWH/xWWQo4Q"
+Set-Cookie: _yasc=jDPwmbAdNJmSvOwTU6H7Oh+oxWxkz/PJct4VVvnX73iQOeq9kRsgKFbPxS27jg2N; domain=.praktikum-services.ru; path=/; expires=Thu, 15 Sep 2033 13:39:22 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1695044362954237-1130208066027202209
+
+{
+    "track": 905605
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderCode201Test[Создание заказа.Параметры.Тестовые данные: Елена Иванова Москва 5 89222222222 4 10.09.2023 Комментарий  [Ljava.lang.String;@466a5b80]" classname="CreateOrdersTest" time="0.081">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 16
+Content-Type: application/json; charset=utf-8
+Date: Mon, 18 Sep 2023 13:39:23 GMT
+ETag: W/"10-bWnebow7q8KCiwf1WjfcSrYyov0"
+Set-Cookie: _yasc=3alOBAv/acDltu4vrvC9Kw0RSvBq1fopAQzjV/oXfgWJV+Mp5Ma8p7taPJ8a2W666A==; domain=.praktikum-services.ru; path=/; expires=Thu, 15 Sep 2033 13:39:23 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1695044363058505-427860039251204079
+
+{
+    "track": 550667
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderContainsTrackTest[Создание заказа.Параметры.Тестовые данные: Елена Иванова Москва 5 89222222222 4 10.09.2023 Комментарий  [Ljava.lang.String;@466a5b80]" classname="CreateOrdersTest" time="0.122">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 15
+Content-Type: application/json; charset=utf-8
+Date: Mon, 18 Sep 2023 13:39:23 GMT
+ETag: W/"f-YHczpxQnRc/NFI6ydLaT/nLP0cQ"
+Set-Cookie: _yasc=e0Rr9XmS9hxfuKSsRvNChkluZNbeN33DEFKDvVmV35e6Y9sGP972d12+sUS4NgVh; domain=.praktikum-services.ru; path=/; expires=Thu, 15 Sep 2033 13:39:23 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1695044363154719-11108557336905158171
+
+{
+    "track": 16009
+}
+]]></system-out>
+  </testcase>
+</testsuite>
