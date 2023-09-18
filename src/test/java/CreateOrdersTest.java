@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
@@ -67,6 +69,8 @@ public class CreateOrdersTest {
     }
 
     @Test
+    @DisplayName("createOrderCode201Test")
+    @Description("createOrderCode201Test")
     public void createOrderCode201Test () {
         Order order = new Order(firstName,lastName,address, metroStation,
                 phone, rentTime, deliveryDate,comment,color);
@@ -75,6 +79,8 @@ public class CreateOrdersTest {
     }
 
     @Test
+    @DisplayName("createOrderContainsTrackTest")
+    @Description("createOrderContainsTrackTest")
     public void createOrderContainsTrackTest () {
 
         Order order = new Order(firstName,lastName,address, metroStation,

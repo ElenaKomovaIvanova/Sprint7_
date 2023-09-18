@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
@@ -23,6 +25,8 @@ public class GetOrdersListTest {
     private ScooterServiceOrder client = new ScooterServiceOrder();
 
     @Test
+    @DisplayName("getOrdersList")
+    @Description("getOrdersList")
     public void getOrdersList () {
 
         RequestSpecification requestSpecification =

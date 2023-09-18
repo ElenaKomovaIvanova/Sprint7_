@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
@@ -28,6 +30,8 @@ public class CreateCourierTest {
 
 
     @Test
+    @DisplayName("createCourierExpOkTest")
+    @Description("createCourierExpOkTest")
     public void createCourierExpOkTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
@@ -35,6 +39,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierExp201Test")
+    @Description("createCourierExp201Test")
     public void createCourierExp201Test() {
 
         ValidatableResponse response = client.createCourier(COURIER);
@@ -43,6 +49,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierDuplicatesCodTest")
+    @Description("createCourierDuplicatesCodTest")
     public void createCourierDuplicatesCodTest() {
 
         ValidatableResponse response1 = client.createCourier(COURIER);
@@ -52,6 +60,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierDuplicatesBodyTest")
+    @Description("createCourierDuplicatesBodyTest")
     public void createCourierDuplicatesBodyTest() {
 
         ValidatableResponse response1 = client.createCourier(COURIER);
@@ -62,6 +72,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierNoLoginTest")
+    @Description("createCourierNoLoginTest")
     public void createCourierNoLoginTest() {
 
         Courier courier = new Courier("first","Courier", 0);
@@ -70,6 +82,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierNoPasswordTest")
+    @Description("createCourierNoPasswordTest")
     public void createCourierNoPasswordTest() {
 
         Courier courier = Courier.noPassword("CourierOne","Courier", 0);
@@ -79,6 +93,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierNoPasswordNoLoginTest")
+    @Description("createCourierNoPasswordNoLoginTest")
     public void createCourierNoPasswordNoLoginTest() {
 
         Courier courier = new Courier("Courier", 0);
@@ -88,6 +104,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierAuthorizationTest")
+    @Description("createCourierAuthorizationTest")
     public void createCourierAuthorizationTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
@@ -96,6 +114,8 @@ public class CreateCourierTest {
 
 
     @Test
+    @DisplayName("createCourierAuthorizationNoLoginTest")
+    @Description("createCourierAuthorizationNoLoginTest")
     public void createCourierAuthorizationNoLoginTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
@@ -104,6 +124,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierAuthorizationNoLoginMessageTest")
+    @Description("createCourierAuthorizationNoLoginMessageTest")
     public void createCourierAuthorizationNoLoginMessageTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
@@ -113,6 +135,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierAuthorizationNoPasswordTest")
+    @Description("createCourierAuthorizationNoPasswordTest")
     public void createCourierAuthorizationNoPasswordTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
@@ -121,6 +145,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierAuthorizationNoPasswordMessageTest")
+    @Description("createCourierAuthorizationNoPasswordMessageTest")
     public void createCourierAuthorizationNoPasswordMessageTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
@@ -130,6 +156,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierAuthorizationLoginErrorTest")
+    @Description("createCourierAuthorizationLoginErrorTest")
     public void createCourierAuthorizationLoginErrorTest() {
 
         Courier courier = new Courier("CourierOne+добавили_текст", "first","Courier", 0);
@@ -138,6 +166,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("createCourierAuthorizationLoginErrorMessageTest")
+    @Description("createCourierAuthorizationLoginErrorMessageTest")
     public void createCourierAuthorizationLoginErrorMessageTest() {
 
         Courier courier = new Courier("CourierOne+добавили_текст", "first","Courier", 0);
@@ -147,6 +177,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("authorizationContainsIdTest")
+    @Description("authorizationContainsIdTest")
     public void authorizationContainsIdTest() {
 
         ValidatableResponse response = client.createCourier(COURIER);
